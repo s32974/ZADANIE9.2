@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
+
 public class Main {
     public static void main(String[] args) {
 
@@ -17,6 +18,15 @@ public class Main {
         cars.add(new Car("Kia Ceed", 2007));
         cars.add(new Car("Mazda 3", 2016));
 
+
+
+        Collections.sort(cars);
+
+//wyswietlanie
+for (Car car : cars) {
+    System.out.println(car.year +" "+car.model);
+
+}
 
     }
 }

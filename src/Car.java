@@ -1,9 +1,15 @@
-public class Car {
+class Car implements Comparable<Car> {
 
-    private String model;
-    private int year;
-
+    public String model;
+    public int year;
 
     public  Car(String model, int year) {
+        this.model = model;
+        this.year = year;
     }
+
+@Override
+public int compareTo(Car o) {
+        return Integer.compare(this.year, o.year);
+}
 }
